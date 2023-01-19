@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/calculator');
+
+
+:root{
+    /* font-family: ; */
+    --btn_font:'Orbitron', sans-serif;
+    --lcd_font:'Calculator', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    height: 100vh;
+    background: rgba(0, 255, 255, 0.457);
+}
+.calculadora{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+
+
+    height: 85%;
+    min-width: 370px;
+    width: 70%;
+    max-width: 700px;
+
+    border-radius: 30px;
+    background: rgb(185, 180, 180);
+    /* z-index: 2; */
+    border-left: 10px solid rgb(80, 77, 77);
+    border-bottom: 10px solid rgb(80, 77, 77);
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 180px repeat(4, 1fr);
+
+    padding: 20px;
+}
+.lcd{
+    grid-column: 1/5;
+
+    margin-top: 30px;
+    margin-bottom: 20px;
+    /* border: 1px beige solid; */
+
+    border-radius: 1em 1em 0 0;
+
+    border: 0;
+    border-right: 5px solid rgb(25, 24, 24);
+    border-top: 5px solid rgb(25, 24, 24);
+
+
+    background: rgb(77, 76, 76);
+    border-radius: 1em 1em 0 0;
+
+    display: flex;
+    align-items: flex-end;
+}
+.lcd input{
+    height: 60px;
+    width: 100%;
+
+    border: 0;
+
+    background: rgb(77, 76, 76);
+
+    right: 0;
+
+    display: flex;
+    
+
+    text-align: right;
+    font-family: var(--lcd_font);
+    font-size: 60px;
+    color: rgb(14, 190, 14);
+
+    outline: none;
+
+    appearance: none; 
+    margin: 0;
+
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+.lcd p{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+
+    font-family: var(--lcd_font);
+    font-size: 30px;
+    color: rgb(13, 169, 13);
+
+
+}
+
+
+
+
+.btn{
+    place-self: center;
+    border: 1px black solid;
+    height: 85px;
+    min-width: 85px;
+    width: 90%;
+
+    background: rgb(226, 221, 183);
+
+    border: 0px ;
+    border-radius: 1em;
+
+    border-left: 5px solid rgb(150, 146, 120);
+    border-bottom: 5px solid rgb(150, 146, 120);
+
+    display: grid;
+    place-items: center;
+
+    font-family: var(--btn_font);
+    font-weight: 600;
+    font-size: 30px;
+
+    cursor: pointer;
+}
+.btn:active{
+    margin-right: 4px;
+    margin-top: 4px;
+    height: -5px;
+    width: -5px;
+    border: 1px solid rgb(150, 146, 120);
+    /* transform: translateY(5px); */
+    transition: all 0.1s ease 0s;
+}
+
+.on{
+    position: absolute;
+    top: 10px;
+    width: 100px !important;
+    height: 30px !important;
+    font-size: 20px;
+}
+.on:active{
+    margin-right: 4px;
+    margin-top: 4px;
+    height: 25px;
+    width: 95px;
+    border: 1px solid rgb(150, 146, 120);
+    /* transform: translateY(5px); */
+    transition: all 0.1s ease 0s;
+}

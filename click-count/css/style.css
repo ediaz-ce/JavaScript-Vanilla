@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Varela+Round&display=swap');
+/* 
+* Weight: 300 - 700 
+*/
+
+:root{
+    --fontNumber:'Varela Round', sans-serif;
+}
+*{
+    font-family: 'Comfortaa', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 10% auto;
+
+    background-image: url('../html/images/bg-forest.jpg');
+    background-size: cover;
+    background-position: center bottom;
+}
+header{
+    background: rgba(92, 84, 46, 0.882);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    min-height: 70px;
+    /* height: 100%; */
+}
+header h3{
+    margin-left: 1rem;
+    
+    font-weight: 700;
+    font-size: 30px;
+
+    color: rgb(254,254,240);
+
+    text-transform: capitalize;
+    /* -webkit-text-stroke: 5px rgba(23, 154, 18, 0.194); */
+    text-shadow: 5px 3px 4px rgb(2, 2, 2);
+
+    
+}
+
+/* Burguer escondida */
+.burger{
+    margin-right: 1rem;
+    height: 30px;
+    width: 30px;
+    background: beige;
+    visibility: hidden;
+}
+main{
+    background: rgba(9, 36, 0, 0.338);
+    display: grid;
+    place-items: center;
+    height: 100%;
+}
+main .contenido{
+    height: 50%;
+    max-width: 400px;
+    width: 40%;
+    /* background: gray; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+main .contenido .count{
+    font-family: var(--fontNumber);
+    font-size: 150px;
+    color: rgb(254,254,240);
+    /* border: 1px solid black; */
+}
+main .contenido .botones{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+.botones .btn{
+    height: 6rem;
+    width: 6rem;
+
+    background: rgba(222, 222, 165, 0.587);
+    /* box-shadow: 3px 3px 2px 2px black; */
+
+    border-radius: 50%;
+    border:  4px solid rgba(3, 53, 3, 0.576);
+
+    font-size: 70px;
+    text-align: center;
+    color: rgb(254,254,240);
+}
+.decrease{
+    display: flex;
+    justify-content: center;
+}
+.btn:hover{
+    background: rgba(74, 74, 55, 0.7);
+    border:  4px solid rgba(59, 91, 59, 0.576);
+}
+.animated{
+    animation: pulse .5s 1 ease-in;
+}
+@keyframes pulse {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(45deg);
+    }
+    50%{
+        transform: rotate(-45deg);
+    }
+    75%{
+        transform: rotate(45deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}

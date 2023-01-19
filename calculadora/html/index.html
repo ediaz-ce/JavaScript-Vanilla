@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="calculadora">
+            <div class="lcd">
+                <p id="guide"></p>
+                <input id="op" type="text" placeholder="000"  value="" readonly>
+            </div>
+
+            <button onclick="put_number(value)" value="7" class="btn num">7</button>
+            <button onclick="put_number(value)" value="8" class="btn num">8</button>
+            <button onclick="put_number(value)" value="9" class="btn num">9</button>
+            <button onclick="calculate(value)" value="/" class="btn dividir">%</button>
+            <button onclick="put_number(value)" value="4" class="btn num">4</button>
+            <button onclick="put_number(value)" value="5" class="btn num">5</button>
+            <button onclick="put_number(value)" value="6" class="btn num">6</button>
+            <button onclick="calculate(value)" value="*" class="btn multi">X</button>
+            <button onclick="put_number(value)" value="1" class="btn num">1</button>
+            <button onclick="put_number(value)" value="2" class="btn num">2</button>
+            <button onclick="put_number(value)" value="3" class="btn num">3</button>
+            <button onclick="calculate(value)" value="-" class="btn rest">-</button>
+            <button onclick="put_number(value)" value="0" class="btn num">0</button>
+            <button onclick="put_number(value)" value="." class="btn point">.</button>
+            <button onclick="calculate(value)" value="=" class="btn igual">=</button>
+            <button onclick="calculate(value)" value="+" class="btn mas">+</button>
+            <button onclick="delBtn()" value="on/off" class="btn on">on</button>
+        </div>
+    </main>
+    <script src="../js/main.js"></script>
+</body>
+</html>

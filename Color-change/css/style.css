@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'Liquido';
+    src: url('../font/LIQUIDO\ Reguar\ 400.otf');
+}
+
+@font-face {
+    font-family: 'Fluid';
+    src: url('../font/LIQUIDO\ Fluid\ 400.otf');
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Liquido';
+
+}
+
+.container {
+    background: cyan;
+    height: 100vh;
+}
+
+header {
+    background: rgb(255, 255, 255);
+    height: 5rem;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box {
+    width: 250px;
+    height: 80%;
+
+    background: transparent;
+
+    border: none;
+    border-radius: 10px;
+    font-size: 50px;
+
+    /* Color Letras */
+    background: linear-gradient(to right,
+            hsl(267deg 100% 7%) 0%,
+            hsl(337deg 79% 38%) 25%,
+            hsl(296deg 67% 47%) 50%,
+            hsl(233deg 64% 35%) 75%,
+            rgb(3, 4, 17) 100%);
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.box:hover {
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 5px 2px 10px 0px rgba(0, 0, 0, 0.188);
+    cursor: pointer;
+}
+
+main {
+    background: white;
+    position: relative;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    text-decoration: none;
+    color: #FFF;
+}
+
+.bginfo {
+    height: 20%;
+    padding: 0px 30px;
+    width: 100vh;
+
+    background-color: rgb(33, 33, 33);
+
+    color: white;
+    font-size: 90px;
+
+    /* border: 4px white double; */
+    border-radius: 1rem 0 1rem 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.color-change {
+    margin-left: 10px;
+    font-size: 70px;
+
+    text-transform: uppercase;
+    text-shadow: 3px 5px  black;
+}
+
+.btn-change {
+    margin-top: 20px;
+
+    height: calc(100px + 8px);
+    width: calc(250px + 8px);
+
+    border: none;
+
+    font-size: 70px;
+    background-image: linear-gradient(90deg,
+            hsl(267deg 100% 7%) 0%,
+            hsl(286deg 95% 16%) 5%,
+            hsl(306deg 89% 24%) 11%,
+            hsl(326deg 82% 33%) 16%,
+            hsl(345deg 76% 42%) 21%,
+            hsl(9deg 74% 51%) 26%,
+            hsl(46deg 79% 61%) 32%,
+            hsl(82deg 85% 71%) 37%,
+            hsl(119deg 92% 81%) 42%,
+            hsl(155deg 96% 91%) 47%,
+            hsl(180deg 96% 91%) 53%,
+            hsl(192deg 88% 80%) 58%,
+            hsl(204deg 79% 70%) 63%,
+            hsl(216deg 72% 59%) 68%,
+            hsl(228deg 64% 49%) 74%,
+            hsl(232deg 63% 39%) 79%,
+            hsl(233deg 65% 30%) 84%,
+            hsl(234deg 66% 22%) 89%,
+            hsl(235deg 69% 13%) 95%,
+            rgb(12, 15, 55) 100%);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+
+    
+    animation: slidebg 2s linear infinite;
+    color: #FFF;
+}
+
+.btn-change:after {
+    content: attr(value);
+    width: 250px;
+    height: 100px;
+    background-color: rgb(33, 33, 33);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btn-change:hover {
+    font-size: 72px;
+    color: rgb(253, 253, 254);
+    text-shadow:
+		0 0 5px rgb(157, 0, 255),
+		0 0 10px rgb(230, 0, 255);
+    cursor: pointer;
+}
+
+.animacionClick{
+    animation: slidebg 1s linear 3;
+}
+
+@keyframes slidebg {
+    to {
+        background-position: 250px;
+    }
+}
+

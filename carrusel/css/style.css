@@ -1,0 +1,136 @@
+@font-face{
+    font-family: 'Nexa';
+    src: url('../font/Nexa\ Light.otf');
+}
+@font-face {
+    font-family: 'NexaB';
+    src: url('../font/Nexa\ Bold.otf');
+}
+:root{
+    --font: 'Nexa';
+    --fontBold: 'NexaB';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+}
+.container{
+    background: #ffffff;
+    height: 100vh;
+}
+header{
+    height: 10%;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(to top, 
+    blueviolet,
+    white 3%,
+    blueviolet 80%);
+
+}
+header h1{
+    position: relative;
+    font-family: 'NexaB';
+    font-weight: 700;
+
+
+    color: #fefefe;
+    z-index: 1;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    overflow: hidden;
+}
+.contain{
+
+    width: max-content;
+    max-width: 400px;
+    min-height: 400px;
+    height: max-content;
+
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.217);
+
+    padding: 20px 0;
+}
+.img{
+
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+
+    background-size:auto;
+
+    box-shadow: 4px 2px 5px 0px blueviolet;
+}
+.name{
+    font-family: var(--fontBold);
+    font-size: 25px;
+    color: rgb(140, 78, 197);
+
+    margin: 20px 0 5px 0;
+    text-transform: capitalize;
+}
+.job{
+    font-size: 12px;
+    color: purple;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.text{
+    text-align: center;
+    word-wrap: break-word;
+    padding: 0 10px;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+.btn{
+    height: 20px;
+    width: 20px;
+
+    border: 4px solid rgb(201, 174, 227);
+    border-right: none;
+    border-bottom: none;
+
+    background: transparent;
+
+    margin: 0 10px 40px 10px;
+}
+.btn:hover{
+    border: 4px solid blueviolet;
+    border-right: none;
+    border-bottom: none;
+}
+.prev{
+    transform: rotateZ(-45deg);
+}
+.next{
+    transform: rotateZ(135deg);
+}
+.random{
+    height: 30px;
+    width: 80px;
+
+    border: none;
+    border-radius: 1rem;
+    background: rgb(201, 174, 227);
+    color: whitesmoke;
+}
+.random:hover{
+    background: blueviolet;
+}
