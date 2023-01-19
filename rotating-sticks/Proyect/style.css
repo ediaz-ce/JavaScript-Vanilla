@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.contenedor{
+    height: 100vh;
+    background: rgb(33,33,33);
+    
+    padding: 10px;
+    overflow: hidden;
+}
+
+.row{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+    /* .box:nth-child(even){
+        border: transparent;
+    } */
+    .box{
+
+        width: 40px;
+
+        /* background: black; */
+
+        border-bottom: 5px rgba(255, 255, 255) solid;
+        border-top: 5px rgba(255, 255, 255) solid;
+        box-shadow: 0px 0px 5px 0px rgb(0, 128, 255);
+        border-radius: 10px;
+        
+        margin-bottom: 14px;
+        transition: transform 1s;
+    }
+    .animated{
+        animation: spin 5s alternate;
+
+    }
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    /* 50%{
+        transform: rotate(360deg);
+    } */
+    100%{
+        transform: rotate(720deg);
+    }
+    
+} 
